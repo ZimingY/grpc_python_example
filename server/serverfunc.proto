@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message Input {
+	int32 tag = 1;
+	int32 num = 2;
+}
+
+message Output {
+	int32 intout = 3;
+	string sout = 1;
+	repeated double listout = 8;
+}
+
+service MyService {
+	rpc Compute(Input) returns (Output){}
+}
+

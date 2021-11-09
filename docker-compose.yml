@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  server:
+    build: .
+    ports:
+      - 50051:50051
+    command: python server.py
