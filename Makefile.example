@@ -1,0 +1,7 @@
+all: build push
+
+build:
+    docker build -f Dockerfile -t name/of/image .
+
+push:
+    docker push path/of/image
